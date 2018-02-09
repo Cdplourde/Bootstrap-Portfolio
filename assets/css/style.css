@@ -1,0 +1,141 @@
+/* page dimensions and styles */
+@media (max-width: 768px) {
+    a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    a img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+html, body { 
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "titillium Web", "Georgia", "Times", "Times New Roman";
+    font-size: 18px;
+    color: #777777;
+    background-image: url("../images/dust_scratches.png");
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #4aaaa5; 
+    letter-spacing: 1.2px;
+}
+
+h3 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: #4aaaa5;
+    letter-spacing: 1.2px;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    border-bottom: solid 2px #cccccc;
+    letter-spacing: 1.2px;
+}
+
+#banner {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-brand {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-link {
+    padding-top: 23px;
+    padding-bottom: 22px;
+    color: #777777;
+    position: relative;
+}
+
+.nav-item a:hover {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.divider:after {
+    content: '';
+    position: absolute;
+    bottom: 36%;
+    left: 99%;
+    height: 25%;
+    border-right: 1px solid #777777;
+    opacity: 0.3;
+}
+
+/* full page container */
+#pageContainer {
+    min-height: 100%;
+    padding-bottom: 96px; 
+}
+
+/* main content container and styles */
+.container {
+    max-width: 960px;
+}
+
+#contentBody {
+    padding-top: 96px;
+}
+
+h3~hr {
+    max-width: 196px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #cccccc;
+    background-image: linear-gradient(to right, #cccccc, #8a8a8a, #cccccc);
+}
+
+#UofA {
+    color: #AB0520;
+    text-decoration: none;
+}
+
+#UofA:hover {
+    color: #C55063;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -74px;
+    background-color: #666666;
+    color: #DCDCDC;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#tealBar {
+    height: 10px;
+    background-color: #4aaaa5;
+    position: relative;
+    bottom: 20px;
+}

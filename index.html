@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <!-- page container -->
+    <div class="container" id="pageContainer">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand p-0 bg-white">
+            <div class="container" id="banner">
+                <!-- navbar left side-->
+                <a class="navbar-brand p-3" href="#">Chad Plourde</a>
+                <!-- navbar right side -->
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link divider" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown divider">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main body content -->
+        <div class="row justify-content-between" id="contentBody">
+            <!-- about me section -->
+            <section class="col-sm-8">
+                <div class="card mt-4">
+                    <div class="card-body p-4">
+                        <h2 class="card-title">About Me</h2>
+                        <hr>
+                        <img class="float-left mt-2 mr-3" src="assets/images/about.jpg" alt="pic" width=180px>
+                        <p class="mb-3">
+                            Welcome to my portfolio website! My name is Chad. I'm a computer geek, eSports enthusiast (go Cloud9!), and I claim to know
+                            my way around a guitar. Phoenix, Arizona is my permanent home as of 2015, and I'm still enjoying
+                            exploring the beautiful state. I live with my wonderful girlfriend and our two spoiled cats.
+                        </p>
+                        <p>
+                            I'm currently enrolled in the <a id="UofA" target="_blank" href="https://bootcamp.ce.arizona.edu/">University of Arizona Coding Boot Camp</a>. With my knowledge and skills of full stack web developement,
+                            it is my aspiration to make my breakthrough into the professional world of the web.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- connect with me section -->
+            <section class="col-sm-4">
+                <div class="card mt-4">
+                    <div class="card-body text-center p-4">
+                        <h3>Connect With Me</h3>
+                        <hr>
+                        <!-- connection image container -->
+                        <div class="d-flex my-1 justify-content-center" id="socialImages">
+                            <a target="_blank" href="https://github.com/Cdplourde">
+                                <img src="assets/images/github.png" height="60" width="60" alt="github">
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/chad-plourde-081b3b135/">
+                                <img class="mx-2" src="assets/images/linkedin.png" height="60" width="60" alt="linkedin">
+                            </a>
+                            <a target="_blank" href="https://stackoverflow.com/users/9160027/chad-plourde">
+                                <img src="assets/images/stackoverflow.png" height="60" width="60" alt="stackoverflow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div id="tealBar"></div>
+        Copyright &copy 2018 Chad Plourde
+    </footer>
+
+</body>
+
+</html>
