@@ -1,18 +1,4 @@
-/* page dimensions and styles */
-@media (max-width: 768px) {
-    a img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 575px) {
-    a img {
-        width: 60px;
-        height: 60px;
-    }
-}
-
+/* Page dimensions and default styles */
 html, body { 
     height: 100%;
     margin: 0;
@@ -20,32 +6,26 @@ html, body {
 
 body {
     font-family: "titillium Web", "Georgia", "Times", "Times New Roman";
-    font-size: 18px;
+    font-size: 1.1em;
     color: #777777;
     background-image: url("../images/dust_scratches.png");
 }
 
-h2 {
-    font-weight: bold;
-    font-size: 1.8em;
-    color: #4aaaa5; 
-    letter-spacing: 1.2px;
+#pageContainer {
+    min-height: 100%;
+    padding-bottom: 96px; 
 }
 
-h3 {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.15em;
-    color: #4aaaa5;
-    letter-spacing: 1.2px;
+.container {
+    max-width: 960px;
 }
 
-/* navbar */
+/* Navbar */
 .navbar {
     position: fixed;
     width: 100%;
     left: 0;
-    z-index: 1;
+    z-index: 50;
     border-bottom: solid 2px #cccccc;
     letter-spacing: 1.2px;
 }
@@ -60,6 +40,11 @@ h3 {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: white;
+    background-color: #46a09b;
 }
 
 .nav-link {
@@ -84,23 +69,12 @@ h3 {
     opacity: 0.3;
 }
 
-/* full page container */
-#pageContainer {
-    min-height: 100%;
-    padding-bottom: 96px; 
-}
-
-/* main content container and styles */
-.container {
-    max-width: 960px;
-}
-
-#contentBody {
-    padding-top: 96px;
-}
-
-h3~hr {
-    max-width: 196px;
+/* Left panel */
+h2 {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #4aaaa5; 
+    letter-spacing: 1.2px;
 }
 
 hr {
@@ -108,6 +82,33 @@ hr {
     height: 2px;
     background: #cccccc;
     background-image: linear-gradient(to right, #cccccc, #8a8a8a, #cccccc);
+}
+
+/* Connect With Me section */
+h3~hr {
+    max-width: 196px;
+}
+
+h3 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: #4aaaa5;
+    letter-spacing: 1.2px;
+}
+
+#midpic {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* About Me section */
+#aboutMePic {
+    float: left;
+}
+
+#contentBody {
+    padding-top: 96px;
 }
 
 #UofA {
@@ -119,7 +120,62 @@ hr {
     color: #C55063;
 }
 
-/* footer */
+
+
+/* Portfolio section */
+.portfolioPics {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+#portfolio {
+    text-align: center;
+    position: relative;   
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#portfolio a {
+    position: relative;
+}
+
+.picbanner {
+    font-size: 0.9em;
+    width: 100%;
+    padding-top: 5px;
+    height: 35px;
+    background-color: #4aaaa5;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0.95;
+    color: white;
+}
+
+/* Contact section */
+#contact button {
+    background-color: #4aaaa5;
+    color: white; 
+    border: none;
+    width: 100px;
+    height: 35px;
+    font-size: 1em; 
+    cursor:pointer;
+}
+
+#contact input, #contact textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#contact input::-webkit-input-placeholder {
+    opacity: 0.6;
+}
+
+/* Footer */
 .footer {
     position: relative;
     bottom: 0px;
@@ -136,6 +192,39 @@ hr {
 #tealBar {
     height: 10px;
     background-color: #4aaaa5;
-    position: relative;
+    position: relative; 
     bottom: 20px;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+    .portfolioPics {
+        width: 250px;
+    }
+
+    #connectHeader {
+        font-size: 1.4em;
+        margin-bottom: 0px; 
+    }
+
+    .picbanner {
+        font-size: 1.4em;
+        padding-top: 8px;
+        height: 55px;
+        top: 50px;
+        left: 0px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 575px) {
+    #aboutMePic {
+        float: none;
+        width: 330px;
+        margin-bottom: 20px;
+    }
+
+    .centerElement {
+        text-align: center;
+    }
 }
