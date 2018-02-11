@@ -40,6 +40,7 @@ body {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
+    padding-top: 17px !important;
 }
 
 .navbar-brand:hover {
@@ -48,8 +49,8 @@ body {
 }
 
 .nav-link {
-    padding-top: 23px;
-    padding-bottom: 22px;
+    padding-top: 24px;
+    padding-bottom: 23px;
     color: #777777;
     position: relative;
 }
@@ -159,14 +160,16 @@ h3 {
 
 /* Contact section */
 
-.btn-success {
-    background-color: #4aaaa5;
-    width: 100px;
-}
 
 .btn {
-    border-radius: 0rem;
-    border: none;
+    background-color: #4aaaa5;
+    border-radius: 0em;
+    box-shadow: none !important;
+}
+
+button {
+    width: 100px;
+    color: white;
 }
 
 .btn:hover {
@@ -221,12 +224,20 @@ h3 {
         left: 0px;
         z-index: 2;
     }
+
+    .nav-item {
+        font-size: 0.85em;
+    }
+
+    .navbar-brand {
+        font-size: 1.3em;
+    }
 }
 
 @media (max-width: 575px) {
     #aboutMePic {
         float: none;
-        width: 330px;
+        width: 300px;
         margin-bottom: 20px;
     }
 
